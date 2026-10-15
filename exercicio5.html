@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Inscrição em Evento</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Inscrição em Evento</h1>
+    </header>
+
+    <main>
+        <form action="#" method="GET">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required>
+            <br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required>
+            <br><br>
+
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" placeholder="Digite seu cargo..." required>
+            <br><br>
+
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Digite o nome da empresa..." required>
+            <br><br>
+
+            <label for="dataEvento">Data do Evento:</label>
+            <input type="date" id="dataEvento" name="dataEvento" required>
+            <br><br>
+
+            <label for="horarioChegada">Horário de Chegada:</label>
+            <input type="time" id="horarioChegada" name="horarioChegada" required>
+            <br><br>
+
+            <label for="alimentacao">Alimentação Preferida:</label>
+            <select id="alimentacao" name="alimentacao" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="tradicional">Tradicional</option>
+                <option value="vegetariana">Vegetariana</option>
+                <option value="vegana">Vegana</option>
+                <option value="semGluten">Sem glúten</option>
+                <option value="semLactose">Sem lactose</option>
+            </select>
+            <br><br>
+
+            <label>Restrições Alimentares:</label>
+            <br>
+
+            <input type="checkbox" id="gluten" name="restricoes[]" value="gluten">
+            <label for="gluten">Glúten</label>
+            <br>
+
+            <input type="checkbox" id="lactose" name="restricoes[]" value="lactose">
+            <label for="lactose">Lactose</label>
+            <br>
+
+            <input type="checkbox" id="amendoim" name="restricoes[]" value="amendoim">
+            <label for="amendoim">Amendoim</label>
+            <br>
+
+            <input type="checkbox" id="frutosMar" name="restricoes[]" value="frutosMar">
+            <label for="frutosMar">Frutos do mar</label>
+            <br>
+
+            <input type="checkbox" id="outraRestricao" name="restricoes[]" value="outra">
+            <label for="outraRestricao">Outra</label>
+            <br><br>
+
+            <label>Necessidades Especiais:</label>
+            <br>
+
+            <input type="checkbox" id="acessibilidade" name="necessidades[]" value="acessibilidade">
+            <label for="acessibilidade">Acessibilidade</label>
+            <br>
+
+            <input type="checkbox" id="interprete" name="necessidades[]" value="interprete">
+            <label for="interprete">Intérprete de Libras</label>
+            <br>
+
+            <input type="checkbox" id="mobilidade" name="necessidades[]" value="mobilidade">
+            <label for="mobilidade">Auxílio de mobilidade</label>
+            <br>
+
+            <input type="checkbox" id="outraNecessidade" name="necessidades[]" value="outra">
+            <label for="outraNecessidade">Outra necessidade</label>
+            <br><br>
+
+            <input type="checkbox" id="privacidade" name="privacidade" value="sim" required>
+            <label for="privacidade">Aceito a Política de Privacidade.</label>
+            <br><br>
+
+            <input type="checkbox" id="atualizacoes" name="atualizacoes" value="sim">
+            <label for="atualizacoes">Desejo receber atualizações sobre o evento.</label>
+            <br><br>
+
+            <h3>Dados do Acompanhante</h3>
+
+            <label for="nomeAcompanhante">Nome do Acompanhante:</label>
+            <input type="text" id="nomeAcompanhante" name="nomeAcompanhante" placeholder="Digite o nome do seu acompanhante...">
+            <br><br>
+
+            <label for="emailAcompanhante">E-mail do Acompanhante:</label>
+            <input type="email" id="emailAcompanhante" name="emailAcompanhante" placeholder="Digite aqui o e-mail do acompanhante...">
+            <br><br>
+
+            <label for="telefoneAcompanhante">Telefone do Acompanhante:</label>
+            <input type="tel" id="telefoneAcompanhante" name="telefoneAcompanhante" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}">
+            <br><br>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+            <br><br>
+
+            <label for="empresaAcompanhante">Empresa do Acompanhante:</label>
+            <input type="text" id="empresaAcompanhante" name="empresaAcompanhante" placeholder="Digite a empresa do acompanhante...">
+            <br><br>
+
+            <label for="cargoAcompanhante">Cargo do Acompanhante:</label>
+            <input type="text" id="cargoAcompanhante" name="cargoAcompanhante" placeholder="Digite o cargo do acompanhante...">
+            <br><br>
+
+            <label for="assento">Preferência de Assento:</label>
+            <select id="assento" name="assento" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="frente">Próximo ao palco</option>
+                <option value="meio">Parte central</option>
+                <option value="fundo">Parte de trás</option>
+                <option value="corredor">Próximo ao corredor</option>
+                <option value="indiferente">Sem preferência</option>
+            </select>
+            <br><br>
+
+            <label for="informacoes">Outras Informações Relevantes:</label>
+            <br>
+            <textarea id="informacoes" name="informacoes" rows="5" cols="40" placeholder="Outras informações relevantes..."></textarea>
+            <br><br>
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </main>
+</body>
+</html>

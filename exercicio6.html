@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6 - Solicitação de Orçamento</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Solicitação de Orçamento</h1>
+    </header>
+
+    <main>
+        <form action="#" method="GET">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." required>
+            <br><br>
+
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Digite o nome da empresa..." required>
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail..." required>
+            <br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required>
+            <br><br>
+
+            <label for="descricao">Descrição do Projeto:</label>
+            <br>
+            <textarea id="descricao" name="descricao" rows="5" cols="40" placeholder="Descreva seu projeto..." required></textarea>
+            <br><br>
+
+            <label for="prazo">Prazo de Entrega Desejado:</label>
+            <input type="date" id="prazo" name="prazo" required>
+            <br><br>
+
+            <label for="orcamento">Orçamento Disponível (R$):</label>
+            <input type="number" id="orcamento" name="orcamento" placeholder="Digite o valor disponível..." min="0" step="0.01" required>
+            <br><br>
+
+            <label for="local">Local de Entrega:</label>
+            <input type="text" id="local" name="local" placeholder="Digite o endereço de entrega..." required>
+            <br><br>
+
+            <label for="referenciaProjeto">Referência do Projeto Anterior:</label>
+            <input type="text" id="referenciaProjeto" name="referenciaProjeto" placeholder="Informe um projeto anterior...">
+            <br><br>
+
+            <label for="contato">Preferência de Contato:</label>
+            <select id="contato" name="contato" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="email">E-mail</option>
+                <option value="telefone">Telefone</option>
+                <option value="whatsapp">WhatsApp</option>
+            </select>
+            <br><br>
+
+            <input type="checkbox" id="termos" name="termos" value="sim" required>
+            <label for="termos">Aceito os Termos e Condições.</label>
+            <br><br>
+
+            <input type="checkbox" id="novidades" name="novidades" value="sim">
+            <label for="novidades">Desejo receber novidades por e-mail.</label>
+            <br><br>
+
+            <h3>Dados do Responsável</h3>
+
+            <label for="nomeResponsavel">Nome do Responsável:</label>
+            <input type="text" id="nomeResponsavel" name="nomeResponsavel" placeholder="Digite o nome do responsável..." required>
+            <br><br>
+
+            <label for="cargoResponsavel">Cargo do Responsável:</label>
+            <input type="text" id="cargoResponsavel" name="cargoResponsavel" placeholder="Digite o cargo do responsável..." required>
+            <br><br>
+
+            <label for="telefoneResponsavel">Telefone do Responsável:</label>
+            <input type="tel" id="telefoneResponsavel" name="telefoneResponsavel" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required>
+            <br><br>
+
+            <label for="dataInicio">Data de Início do Projeto:</label>
+            <input type="date" id="dataInicio" name="dataInicio" required>
+            <br><br>
+
+            <label for="quantidade">Número de Itens/Produtos:</label>
+            <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade..." required>
+            <br><br>
+
+            <label for="urgencia">Urgência:</label>
+            <select id="urgencia" name="urgencia" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+            <br><br>
+
+            <label for="setor">Setor da Empresa:</label>
+            <select id="setor" name="setor" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="industria">Indústria</option>
+                <option value="comercio">Comércio</option>
+                <option value="saude">Saúde</option>
+                <option value="educacao">Educação</option>
+                <option value="servicos">Serviços</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br><br>
+
+            <label for="pagamento">Método de Pagamento Preferido:</label>
+            <select id="pagamento" name="pagamento" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="pix">PIX</option>
+                <option value="cartao">Cartão</option>
+                <option value="boleto">Boleto bancário</option>
+                <option value="transferencia">Transferência bancária</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Solicitar Orçamento</button>
+
+        </form>
+    </main>
+</body>
+</html>
